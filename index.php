@@ -66,8 +66,8 @@ $conn->close();
                     echo "<div><strong>" . htmlspecialchars($row['title']) . "</strong><br>";
                     echo "<small>" . htmlspecialchars($row['description']) . "</small></div>";
                     echo "<div>";
-                    echo "<a href='fill_survey.php?id=" . $row["id"] . "' class='btn btn-primary me-2'>Fill Survey</a>";
-                    echo "<a href='view_responses.php?id=" . $row["id"] . "' class='btn btn-secondary'>View Responses</a>";
+                    echo "<a href='fill_survey.php?id=" . $row["id"] . "' class='btn btn-primary me-2'>Isi Survey</a>";
+                    echo "<a href='view_responses.php?id=" . $row["id"] . "' class='btn btn-secondary'>Lihat Jawaban Survey</a>";
                     echo "</div>";
                     echo "</li>";
                 }

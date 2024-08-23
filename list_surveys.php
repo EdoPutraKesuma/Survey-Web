@@ -13,7 +13,7 @@ $conn->close();
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
-    <title>List of Surveys</title>
+    <title>Daftar Surveys</title>
 </head>
 
 <body>
@@ -26,8 +26,8 @@ $conn->close();
                 echo "<div class='list-group-item d-flex justify-content-between align-items-center'>";
                 echo "<span>" . htmlspecialchars($row['title']) . "</span>";
                 echo "<div>";
-                echo "<a href='fill_survey.php?id=" . $row["id"] . "' class='btn btn-primary me-2'>Fill Survey</a>";  // Tombol untuk mengisi survey
-                echo "<a href='view_responses.php?id=" . $row["id"] . "' class='btn btn-secondary'>View Responses</a>";  // Tombol untuk melihat respons
+                echo "<a href='fill_survey.php?id=" . $row["id"] . "' class='btn btn-primary me-2'>Isi Survey</a>";  // Tombol untuk mengisi survey
+                echo "<a href='view_responses.php?id=" . $row["id"] . "' class='btn btn-secondary'>Lihat Jawaban Survey</a>";  // Tombol untuk melihat respons
                 echo "</div>";
                 echo "</div>";
             }
